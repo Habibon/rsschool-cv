@@ -1,7 +1,7 @@
 \# Ishchenko Daria  
 \#\#\# Front-end developer  
 
-![Photo](/DashaPhoto.jpeg)
+<img src="/DashaPhoto.jpeg" style="width: 180px">
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
 \#\#Contact  
