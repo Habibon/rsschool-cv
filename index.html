@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     })
     
-    document.getElementById('result').addEventListener('click', function(event) {
+    document.getElementById('result').addEventListener('click',function(event){
         const usAge = document.getElementById('age').value;
         const usHeight = document.getElementById('height').value;
         const usWeight = document.getElementById('weight').value;
@@ -90,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
         document.getElementById('answerform').appendChild(ans);
-        document.getElementById('answerform').style.display = 'block';
+        document.getElementById('answerform').style.display ='block';
     });
 
-    document.getElementById('clean').addEventListener('click', function(event) {
+    document.getElementById('clean').addEventListener('click', function(event){
         console.log('clean');
         document.getElementById('answerform').style.display = "none";
         document.querySelectorAll('button.genderButton').forEach(button=&amp;gt{
