@@ -65,16 +65,16 @@ document.addEventListener('DOMContentLoaded', function(){
     let activity;
     let ans = document.createElement('p');
     
-    document.querySelectorAll('button.genderButton').forEach(button =&amp;gt{
-        button.onclick = function () {
+    document.querySelectorAll('button.genderButton').forEach(button=&amp;gt{
+        button.onclick = function(){
             this.classList.add('active');
             usGender = button.dataset.gender;
         }
     })
     
-    document.querySelectorAll('input[type=radio]').forEach(input =&amp;gt{
-        input.onclick = function () {
-            activity = input.value;
+    document.querySelectorAll('input[type=radio]').forEach(input=&amp;gt{
+        input.onclick=function(){
+            activity=input.value;
         }
     })
     
@@ -84,9 +84,9 @@ document.addEventListener('DOMContentLoaded', function(){
         const usWeight = document.getElementById('weight').value;
 
         if (usGender === 'male') {
-            ans.innerHTML = Math.round((66.5 + 13.75 * usWeight + 5.003 * usHeight - 6.775 * usAge) * activity);
+            ans.innerHTML = Math.round((66.5+13.75*usWeight+5.003*usHeight-6.775*usAge)*activity);
         } else {
-            ans.innerHTML = Math.round((655.1 + 9.563 * usWeight + 1.85 * usHeight - 4.676 * usAge) * activity);
+            ans.innerHTML = Math.round((655.1+9.563*usWeight+1.85*usHeight-4.676*usAge)*activity);
         }
 
         document.getElementById('answerform').appendChild(ans);
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('clean').addEventListener('click', function(event) {
         console.log('clean');
         document.getElementById('answerform').style.display = "none";
-        document.querySelectorAll('button.genderButton').forEach(button =&amp;gt{
+        document.querySelectorAll('button.genderButton').forEach(button=&amp;gt{
             button.classList.remove('active');
         });
     })
