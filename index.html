@@ -58,49 +58,17 @@
 
     <section id="code-examples">
         <h2>Code Examples</h2>
-        <h4>Calories Counter</h4>
+        <h4>hello, world</h4>
         <pre><code>
-document.addEventListener('DOMContentLoaded', function(){
-    let usGender;
-    let activity;
-    let ans = document.createElement('p');
-    
-    document.querySelectorAll('button.genderButton').forEach(button=&amp;gt{
-        button.onclick = function(){
-            this.classList.add('active');
-            usGender = button.dataset.gender;
-        }
-    })
-    
-    document.querySelectorAll('input[type=radio]').forEach(input=&amp;gt{
-        input.onclick=function(){
-            activity=input.value;
-        }
-    })
-    
-    document.getElementById('result').addEventListener('click',function(event){
-        const usAge = document.getElementById('age').value;
-        const usHeight = document.getElementById('height').value;
-        const usWeight = document.getElementById('weight').value;
-
-        if (usGender === 'male') {
-            ans.innerHTML = Math.round((66.5+13.75*usWeight+5.003*usHeight-6.775*usAge)*activity);
-        } else {
-            ans.innerHTML = Math.round((655.1+9.563*usWeight+1.85*usHeight-4.676*usAge)*activity);
-        }
-
-        document.getElementById('answerform').appendChild(ans);
-        document.getElementById('answerform').style.display ='block';
-    });
-
-    document.getElementById('clean').addEventListener('click', function(event){
-        console.log('clean');
-        document.getElementById('answerform').style.display = "none";
-        document.querySelectorAll('button.genderButton').forEach(button=&amp;gt{
-            button.classList.remove('active');
-        });
-    })
-});
+            <!DOCTYPE HTML>
+            <html>
+            <head>
+                <title>JavaScript Hello World</title>
+            </head>
+            <body>
+                <h1>Hello, world </h1>
+            </body>
+            </html>
         </code></pre>
         <hr>
     </section>
