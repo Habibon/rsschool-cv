@@ -65,14 +65,14 @@ document.addEventListener('DOMContentLoaded', function(){
     let activity;
     let ans = document.createElement('p');
     
-    document.querySelectorAll('button.genderButton').forEach(button =&ampgt{
+    document.querySelectorAll('button.genderButton').forEach(button =&amp;gt{
         button.onclick = function () {
             this.classList.add('active');
             usGender = button.dataset.gender;
         }
     })
     
-    document.querySelectorAll('input[type=radio]').forEach(input =&ampgt{
+    document.querySelectorAll('input[type=radio]').forEach(input =&amp;gt{
         input.onclick = function () {
             activity = input.value;
         }
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('clean').addEventListener('click', function(event) {
         console.log('clean');
         document.getElementById('answerform').style.display = "none";
-        document.querySelectorAll('button.genderButton').forEach(button =&ampgt{
+        document.querySelectorAll('button.genderButton').forEach(button =&amp;gt{
             button.classList.remove('active');
         });
     })
